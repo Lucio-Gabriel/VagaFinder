@@ -1,14 +1,13 @@
 <x-app-layout>
-
-    <div class="py-5">
+    <div class="bg-gray-100 py-5">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="font-semibold text-2xl p-6 pl-12 text-gray-900 dark:text-gray-100">
+            <div class="font-semibold text-2xl p-6 pl-12 text-gray-800">
                 Empregos recomendados
             </div>
         </div>
     </div>
 
-    <div class="flex flex-wrap items-center justify-center gap-5">
+    <div class="bg-gray-100 flex flex-wrap items-center justify-center gap-5">
         <div class="bg-white basis-1/3 py-20 px-5 shadow-sm rounded-lg hover:bg-[#D3D8F8] duration-300">
             <div class="flex items-start justify-start -mt-12 mb-3">
                 <img
