@@ -15,4 +15,34 @@
         </div>
     </div>
 
+    <div class="flex flex-wrap items-center justify-center gap-5">
+        <div class="bg-white basis-1/3 py-20 px-5 shadow-sm rounded-lg hover:bg-gray-400 duration-300">
+            <div class="flex items-start justify-start -mt-12 mb-12">
+                <img
+                    src="/images/job.png"
+                    alt="Jobs"
+                    class="rounded-full w-20 h-20 "
+                />
+
+                <h1 class="pt-6 pl-2 text-xl font-medium">
+                    Titulo da vaga
+                </h1>
+            </div>
+            <div class="flex items-start justify-start gap-2 pl-2">
+                <div class="bg-blue-500 text-white py-2 px-2 rounded-md">
+                    conteudo
+                </div>
+
+                <div class="bg-blue-500 text-white py-2 px-2 rounded-md">
+                    conteudo
+                </div>
+
+                <div class="bg-blue-500 text-white py-2 px-2 rounded-md">
+                    conteudo
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </x-app-layout>
