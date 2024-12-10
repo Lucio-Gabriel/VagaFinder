@@ -38,7 +38,7 @@ new class extends Component
                         {{ __('Inicio') }}
                     </x-nav-link>
 
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
+                    <x-nav-link :href="route('vacancies.index')" :active="request()->routeIs('vacancies.index')" wire:navigate>
                         {{ __('Cadastra uma vaga') }}
                     </x-nav-link>
                 </div>

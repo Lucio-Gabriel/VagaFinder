@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div class="bg-gray-100 flex flex-wrap items-center justify-center gap-5">
+    <div class="bg-gray-100 flex flex-wrap items-center justify-center gap-5 mb-10">
         <div class="bg-white basis-1/3 py-20 px-5 shadow-sm rounded-lg hover:bg-[#D3D8F8] duration-300">
             <div class="flex items-start justify-start -mt-12 mb-3">
                 <img
