@@ -3,22 +3,17 @@
 namespace App\Livewire\Pages\RegisterVacancies;
 
 use App\Models\Vacancy;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\View;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
 class ShowJobs extends Component
 {
-//    public $title;
-//    public $stacks;
-//    public $description;
-
-    public $Id;
-
     #[Computed]
-    public function vacancies()
+    public function vacancies(): Collection
     {
-        return Vacancy::find($this->Id);
+        return Vacancy::get();
     }
 
     public function render():View
