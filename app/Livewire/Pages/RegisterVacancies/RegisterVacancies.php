@@ -17,12 +17,15 @@ class RegisterVacancies extends Component
     #[Validate('required')]
     public $description = '';
 
+    #[Validate('required')]
+    public $wage = '';
+
     public function save()
     {
         $this->validate();
 
         Vacancy::create(
-            $this->only(['title', 'stacks', 'description'])
+            $this->only(['title', 'stacks', 'description', 'wage'])
         );
 
         session()->flash('status', 'Vaga cadastrada com sucesso');

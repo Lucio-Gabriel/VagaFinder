@@ -22,6 +22,14 @@
                     {{ $vacancy->description  }}
                 </p>
             </div>
+            <div class="mt-10">
+                <hr/>
+                <div class="flex items-start justify-start pt-3">
+                    <span class="text-2xl font-semi">$</span>
+                    <h1 class="text-2xl font-semi">{{ $vacancy->wage  }}</h1>
+                    <span class="text-2xl font-semi text-gray-400">/hr</span>
+                </div>
+            </div>
         </div>
      @endforeach
  </div>
