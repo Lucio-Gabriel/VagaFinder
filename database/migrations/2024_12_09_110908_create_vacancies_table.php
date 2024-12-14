@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('stacks');
             $table->string('description');
+            $table->integer('wage');
             $table->timestamps();
         });
     }
