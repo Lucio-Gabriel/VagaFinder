@@ -13,5 +13,6 @@ class Vacancy extends Model
         'title',
         'stacks',
         'description',
+        'wage',
     ];
 }
