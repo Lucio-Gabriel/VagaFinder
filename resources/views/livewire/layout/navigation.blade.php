@@ -23,7 +23,9 @@ new class extends Component
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}" wire:navigate>
+                    <a href="{{ route('dashboard') }}"
+                       wire:navigate
+                    >
                         <img
                             src="/images/job.png"
                             alt="logotipo"
