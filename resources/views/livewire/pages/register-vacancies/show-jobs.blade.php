@@ -11,6 +11,18 @@
                 <h1 class="pt-6 pl-2 text-2xl font-semibold">
                     {{ $vacancy->title }}
                 </h1>
+
+                <div class="flex items-end justify-end gap-3 pl-64">
+                    <button
+                        x-on:click="Livewire.navigate('{{ route('vacancies.edit', $vacancy)  }}')"
+                    >
+                        edit
+                    </button>
+
+                    <button>
+                        delete
+                    </button>
+                </div>
             </div>
             <div class="flex items-start justify-start gap-2 pl-2">
                 <div class="bg-[#D3D8F8] text-[#2541E2] font-semibold py-2 px-2 -mb-28 rounded-lg">
