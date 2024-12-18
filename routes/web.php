@@ -14,6 +14,5 @@ Route::view('profile', 'profile')
 
 Route::get('register-vacancies', \App\Livewire\Pages\RegisterVacancies\RegisterVacancies::class)->name('vacancies.index');
 Route::get('vacancies/{vacancy}/edit', \App\Livewire\Pages\RegisterVacancies\Edit::class)->name('vacancies.edit');
-//Route::get('vacancies', \App\Livewire\Pages\RegisterVacancies\Edit::class)->name('vacancies.edit');
 
 require __DIR__.'/auth.php';
