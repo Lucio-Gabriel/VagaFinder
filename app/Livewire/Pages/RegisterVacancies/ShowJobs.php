@@ -15,6 +15,10 @@ class ShowJobs extends Component
     {
         return Vacancy::get();
     }
+    public function deleteCard(int $vacancyId)
+    {
+        Vacancy::findOrFail($vacancyId)->delete();
+    }
 
     public function render():View
     {

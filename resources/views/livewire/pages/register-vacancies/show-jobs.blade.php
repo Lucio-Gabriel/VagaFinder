@@ -11,9 +11,25 @@
                 <h1 class="pt-6 pl-2 text-2xl font-semibold">
                     {{ $vacancy->title }}
                 </h1>
+
+                <div class="flex items-end justify-end gap-3 pl-72">
+                    <button
+                        class="text-primary"
+                        x-on:click="Livewire.navigate('{{ route('vacancies.edit', $vacancy)  }}')"
+                    >
+                        <x-svg.pencil-square />
+                    </button>
+
+                    <button
+                        class="text-primary"
+                        wire:click="deleteCard({{ $vacancy->id }})"
+                    >
+                        <x-svg.trash />
+                    </button>
+                </div>
             </div>
             <div class="flex items-start justify-start gap-2 pl-2">
-                <div class="bg-[#D3D8F8] text-[#2541E2] font-semibold py-2 px-2 -mb-28 rounded-lg">
+                <div class="bg-secondary-white text-primary font-semibold py-2 px-2 -mb-28 rounded-lg">
                     {{ $vacancy->stacks  }}
                 </div>
             </div>
