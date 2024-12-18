@@ -22,6 +22,7 @@
 
                     <button
                         class="text-primary"
+                        wire:click="deleteCard({{ $vacancy->id }})"
                     >
                         <x-svg.trash />
                     </button>
